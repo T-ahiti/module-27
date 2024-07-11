@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>functional baap er bank</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
 
 </head>
 <body>
     <header>
-        <h1 class="text-5xl text-center mt-4">functional <span>baap er bank</span></h1>
+        <h1 class="text-5xl text-center mt-4">functional <span class="text-red-700">baap er bank!</span></h1>
     </header>
     <main>
         <section class="mt-8">
@@ -19,20 +22,36 @@
                   <h4 class="text-3xl">Deposit</h4>
                   <h2 class="text-5xl font-medium">$<span id="depositTotal">00</span></h2>
                 </div>
-    
-                <div>
-    
+
+                <div class="bg-yellow-400 p-8 rounded-lg">
+                    <h4 class="text-3xl">Withdraw</h4>
+                    <h2 class="text-5xl font-medium">$<span id="depositTotal">00</span></h2>
                 </div>
-                
-                <div>
-    
+
+                <div class="bg-yellow-400 p-8 rounded-lg">
+                  <h4 class="text-3xl">Balance</h4>
+                  <h2 class="text-5xl font-medium">$<span id="depositTotal">1240</span></h2>
                 </div>
            </div>
+           
+           <div class="grid grid-cols-2 gap-4 w-3/4 mx-auto text-white mt-8">
+                <div class="bg-yellow-400 p-8 rounded-lg">
+                  <h4 class="text-3xl">Please Deposit</h4> <br>
+                  <input type="number" placeholder="enter ammount"><br> <br>
+                  <button class="btn btn-info">deposit</button>
+
+                </div>
+    
+                <div class="bg-yellow-400 p-8 rounded-lg">
+                    <h4 class="text-3xl">Withdraw</h4> <br>
+                    <input type="number" placeholder="enter ammount"><br> <br>
+                    <button class="btn btn-info">Withdraw</button>  
+                </div>
+            </div>
+
         </section>
 
-        <section>
-
-        </section>
+    
     </main>
 </body>
 </html>
