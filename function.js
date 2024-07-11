@@ -15,9 +15,11 @@ document.getElementById('btnDeposit').addEventListener('click' , function(){
 })
 
  document.getElementById('btnWithdraw').addEventListener('click' , function(){
-    const newWithdraw = withdrawAmount.value
-    const previousWithdraw = withdrawTotal.innerText
-    const newWithdrawTotal = parseFloat(newWithdraw) + parseFloat(previousWithdraw)
+    // const getWithdraw = document.getElementById('withdrawAmount')
+    // const newWithdraw = withdrawAmount.value
+    // const previousWithdraw = withdrawTotal.innerText
+    // const newWithdrawTotal = parseFloat(newWithdraw) + parseFloat(previousWithdraw)
+    const newWithdrawTotal = parseFloat(withdrawAmount.value) + parseFloat(withdrawTotal.innerText)
     withdrawTotal.innerText = newWithdrawTotal
 
     withdrawAmount.value = ''
@@ -27,3 +29,6 @@ document.getElementById('btnDeposit').addEventListener('click' , function(){
     const newBalanceTotalWithdraw = parseFloat(previousBalance) - parseFloat(newWithdrawTotal)
     balanceTotal.innerText = newBalanceTotalWithdraw
  })
+
+
+ 
