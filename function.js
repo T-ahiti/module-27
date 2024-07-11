@@ -15,6 +15,15 @@ document.getElementById('btnDeposit').addEventListener('click' , function(){
 })
 
  document.getElementById('btnWithdraw').addEventListener('click' , function(){
-    const getWithdraw = withdrawAmount.value
-    const previousWithdraw
+    const newWithdraw = withdrawAmount.value
+    const previousWithdraw = withdrawTotal.innerText
+    const newWithdrawTotal = parseFloat(newWithdraw) + parseFloat(previousWithdraw)
+    withdrawTotal.innerText = newWithdrawTotal
+
+    withdrawAmount.value = ''
+ 
+    const getbalance = document.getElementById('balanceTotal')
+    const previousBalance = balanceTotal.innerText
+    const newBalanceTotalWithdraw = parseFloat(previousBalance) - parseFloat(newWithdrawTotal)
+    balanceTotal.innerText = newBalanceTotalWithdraw
  })
